@@ -1,0 +1,43 @@
+[debug] [2024-10-06T22:23:32.582Z] ----------------------------------------------------------------------
+[debug] [2024-10-06T22:23:32.585Z] Command:       /Users/udaykota/.nvm/versions/node/v22.4.0/bin/node /Users/udaykota/.nvm/versions/node/v22.4.0/bin/firebase login
+[debug] [2024-10-06T22:23:32.585Z] CLI Version:   13.20.2
+[debug] [2024-10-06T22:23:32.585Z] Platform:      darwin
+[debug] [2024-10-06T22:23:32.585Z] Node Version:  v22.4.0
+[debug] [2024-10-06T22:23:32.585Z] Time:          Mon Oct 07 2024 03:53:32 GMT+0530 (India Standard Time)
+[debug] [2024-10-06T22:23:32.585Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-06T22:23:32.587Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2024-10-06T22:23:33.806Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-10-06T22:23:33.807Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[warn] ⚠  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2024-10-06T22:23:33.809Z] Failed to fetch MOTD Error: EACCES: permission denied, mkdir '/Users/udaykota/.config/configstore'
+You don't have access to this file.
+
+[debug] [2024-10-06T22:23:41.768Z] Error: EACCES: permission denied, mkdir '/Users/udaykota/.config/configstore'
+You don't have access to this file.
+
+    at Object.mkdirSync (node:fs:1364:26)
+    at module.exports.sync (/Users/udaykota/.nvm/versions/node/v22.4.0/lib/node_modules/firebase-tools/node_modules/make-dir/index.js:114:6)
+    at set all (/Users/udaykota/.nvm/versions/node/v22.4.0/lib/node_modules/firebase-tools/node_modules/configstore/index.js:59:12)
+    at Configstore.set (/Users/udaykota/.nvm/versions/node/v22.4.0/lib/node_modules/firebase-tools/node_modules/configstore/index.js:91:12)
+    at Command.actionFn (/Users/udaykota/.nvm/versions/node/v22.4.0/lib/node_modules/firebase-tools/lib/commands/login.js:36:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-10-06T22:23:42.035Z] Error: EACCES: permission denied, mkdir '/Users/udaykota/.config/configstore'
+You don't have access to this file.
+
+    at Object.mkdirSync (node:fs:1364:26)
+    at module.exports.sync (/Users/udaykota/.nvm/versions/node/v22.4.0/lib/node_modules/firebase-tools/node_modules/make-dir/index.js:114:6)
+    at set all (/Users/udaykota/.nvm/versions/node/v22.4.0/lib/node_modules/firebase-tools/node_modules/configstore/index.js:59:12)
+    at Configstore.set (/Users/udaykota/.nvm/versions/node/v22.4.0/lib/node_modules/firebase-tools/node_modules/configstore/index.js:91:12)
+    at process.<anonymous> (/Users/udaykota/.nvm/versions/node/v22.4.0/lib/node_modules/firebase-tools/lib/bin/firebase.js:100:35)
+    at process.emit (node:events:532:35)
+    at process.emit (node:domain:488:12)
+    at process.exit (node:internal/process/per_thread:182:15)
+    at Timeout._onTimeout (/Users/udaykota/.nvm/versions/node/v22.4.0/lib/node_modules/firebase-tools/lib/errorOut.js:20:17)
+    at listOnTimeout (node:internal/timers:581:17)
+[error] 
+[error] Error: An unexpected error has occurred.
